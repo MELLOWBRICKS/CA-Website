@@ -1,4 +1,4 @@
-# CA--Website
+# CA-Website
 
 ## Objective:
 The web application's primary objective is to create a dynamic platform for a college Computer Association.
