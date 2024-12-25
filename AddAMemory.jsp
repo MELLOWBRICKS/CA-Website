@@ -45,7 +45,7 @@
                     String imageName = request.getParameter("image");
                     String comment = request.getParameter("comment");
 
-                    String jdbcURL = "jdbc:mysql://localhost/images";
+                    String jdbcURL = "jdbc:mysql://localhost/registration";
                     String dbUser = "root";
                     String dbPassword = "";
 
