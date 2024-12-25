@@ -31,7 +31,7 @@ public class UploadServlet extends HttpServlet {
         try (Connection connection = DriverManager.getConnection(jdbcURL, dbUser, dbPassword);
              PreparedStatement statement = connection.prepareStatement("INSERT INTO user_images (image_path, comment) VALUES (?, ?)")) {
 
-            String imagePath = "uploads/" + imageName;
+            String imagePath = imageName;
 
             statement.setString(1, imagePath);
             statement.setString(2, comment);
