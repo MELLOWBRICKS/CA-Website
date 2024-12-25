@@ -35,7 +35,7 @@
                 String wsDescription = request.getParameter("wsDescription");
                 String date = request.getParameter("date");
                 String time = request.getParameter("time");
-                String imagePath = request.getParameter("imagePath");
+                String imagePath = "update?" + request.getParameter("imagePath");
                
                 String wsNameError = "";
                 String dateError = "";
