@@ -29,7 +29,8 @@
     <div class="containerAdd">
         <div class="form-wrapperAdd">
             <h1>Add Your Memories</h1>
-            <form action="UploadServlet" method="POST">
+            
+            <form method="POST">
                 <label for="image">Image Name:</label>
                 <input type="text" name="image" id="image" required>
                 <br><br>
@@ -38,6 +39,49 @@
                 <br><br>
                 <input type="submit" value="Submit">
             </form>
+
+            <%
+                if ("POST".equalsIgnoreCase(request.getMethod())) {
+                    String imageName = request.getParameter("image");
+                    String comment = request.getParameter("comment");
+
+                    String jdbcURL = "jdbc:mysql://localhost/images";
+                    String dbUser = "root";
+                    String dbPassword = "";
+
+                    Connection connection = null;
+                    PreparedStatement statement = null;
+
+                    try {
+                        // Step 1: Establish a connection
+                        Class.forName("com.mysql.cj.jdbc.Driver");
+                        connection = DriverManager.getConnection(jdbcURL, dbUser, dbPassword);
+
+                        // Step 2: Prepare and execute the insert statement
+                        String query = "INSERT INTO user_images (image_path, comment) VALUES (?, ?)";
+                        statement = connection.prepareStatement(query);
+                        statement.setString(1, imageName);
+                        statement.setString(2, comment);
+                        statement.executeUpdate();
+
+                        // Step 3: Redirect after successful insertion
+                        out.println("<p>Memory added successfully!</p>");
+                        response.sendRedirect("memories.jsp"); // Optionally redirect after submission
+
+                    } catch (SQLException | ClassNotFoundException e) {
+                        e.printStackTrace();
+                        out.println("<p>Error: " + e.getMessage() + "</p>");
+                    } finally {
+                        // Step 4: Close the database resources
+                        try {
+                            if (statement != null) statement.close();
+                            if (connection != null) connection.close();
+                        } catch (SQLException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            %>
         </div>
     </div>
 </body>
