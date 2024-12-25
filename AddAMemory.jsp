@@ -38,7 +38,7 @@
                 <textarea name="comment" id="comment" rows="2" required></textarea>
                 <br><br>
                 <input type="submit" value="Submit">
-            </form>
+            
 
             <%
                 if ("POST".equalsIgnoreCase(request.getMethod())) {
@@ -82,6 +82,7 @@
                     }
                 }
             %>
+</form>
         </div>
     </div>
 </body>
