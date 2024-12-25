@@ -28,7 +28,7 @@
     </header>
     <div class="containerAdd">
         <div class="form-wrapperAdd">
-            <h1>Add Your Memories</h1>
+            <h1>Add CA's Memories</h1>
             
             <form method="POST">
                 <label for="image">Image Name:</label>
