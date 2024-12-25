@@ -33,7 +33,7 @@
         <% 
             try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				String url = "jdbc:mysql://localhost/images";
+				String url = "jdbc:mysql://localhost/registration";
 				String username = "root";
 				String password = "";
 				Connection connection = DriverManager.getConnection(url, username, password);
