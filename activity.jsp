@@ -29,7 +29,6 @@
     <div class="container">
         <div class="form-wrapper">
             <h1>Activity Registration Form</h1>
-            <%-- JSP Validation and Form Submission Logic --%>
             <%
                 String rollno = request.getParameter("rollno");
                 String activity = request.getParameter("activity");
