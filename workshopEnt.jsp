@@ -100,7 +100,7 @@
                 <div class="form-group">
                 	<% imagePath=""; %>
                     <label for="imagePath">Image Path:</label>
-                    <input type="text" id="imagePath" name="imagePath" value="<%= imagePath %>" placeholder="Enter image path (optional)">
+                    <input type="text" id="imagePath" name="imagePath" value="<%= imagePath %>" placeholder="Enter image path" required>
                 </div>
 
                 <div class="form-group">
