@@ -13,7 +13,7 @@
 <body class="meow">
     <header class="header">
         <nav class="navbar">
-            <a href="Web.jsp">
+            <a href="index.jsp">
                 <img src="logo.png" alt="CA Logo" class="logo">
             </a>
             <ul class="nav-links">

@@ -13,12 +13,12 @@
 <body class="meow">
     <header class="header">
         <nav class="navbar">
-            <a href="Web.jsp">
+            <a href="index.jsp">
                 <img src="logo.png" alt="CA Logo" class="logo">
             </a>
             
             <ul class="nav-links">
-                <li><a href="register.jsp">Register</a></li>
+                <li><a href="designation.jsp">Designation</a></li>
                 <li><a href="activity.jsp">Activity</a></li>
                 <li><a href="workshop.jsp">Workshops</a></li>
                 <li><a href="memories.jsp">Memories</a></li>
