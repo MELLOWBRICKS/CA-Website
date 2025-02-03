@@ -18,7 +18,7 @@
             </a>
             
             <ul class="nav-links">
-                <li><a href="designation.jsp">Designation</a></li>
+                <li><a href="register.jsp">Registration</a></li>
                 <li><a href="activity.jsp">Activity</a></li>
                 <li><a href="workshop.jsp">Workshops</a></li>
                 <li><a href="memories.jsp">Memories</a></li>
@@ -77,7 +77,7 @@
 
                             if (rowsAffected > 0) {
                                 out.println("<p style='color: green;'>The details you entered are recorded. We'll contact you soon.</p>");
-                                out.println("<p style='color: green;'>Go to <a href='designation.jsp'> designation </a> to continue</p>");
+                                // out.println("<p style='color: green;'>Go to <a href='designation.jsp'> designation </a> to continue</p>");
                             } else {
                                 out.println("<p style='color: red;'>Error storing data in the database.</p>");
                             }
