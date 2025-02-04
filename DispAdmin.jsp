@@ -41,9 +41,9 @@
             </a>
             
             <ul class="nav-links">
-                <li><a href="dispReg.jsp">Members</a></li>            
+                <%-- <li><a href="dispReg.jsp">Members</a></li>       --%>  
                 <li><a href="DispAdmin.jsp">Manage Details</a></li>
-                <li><a href="ActDisp.jsp">Activity</a></li>
+                <%-- <li><a href="ActDisp.jsp">Activity</a></li> --%>
                 <li><a href="workshopEnt.jsp">Add Workshop</a></li>
                 <li><a href="AddAMemory.jsp">Add Memory</a></li>
                 <li><a href="about.jsp">About</a></li>
