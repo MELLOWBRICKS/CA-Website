@@ -18,7 +18,7 @@
             </a>
             
             <ul class="nav-links">
-                <li><a href="register.jsp">Do Registration</a></li>
+                <li><a href="register.jsp">Registration</a></li>
                 <li><a href="activity.jsp">Activity</a></li>
                 <li><a href="workshop.jsp">Workshops</a></li>
                 <li><a href="memories.jsp">Memories</a></li>
