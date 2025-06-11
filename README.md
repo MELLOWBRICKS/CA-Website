@@ -38,6 +38,3 @@ To run this project locally, you will need:
 1.  Compile the Java Servlet (`UploadServlet.java`). Ensure the compiled class file is placed in the correct `WEB-INF/classes` directory.
 2.  Deploy the entire project folder (including JSP files, HTML, CSS, images, and `WEB-INF` directory) to your Servlet container (e.g., copy to Tomcat's `webapps` folder).
 3.  Access the application through your web browser (e.g., `http://localhost:8080/your-project-name/`).
-
-## How to Contribute
-Currently, contributions are managed by the core team. If you have suggestions or find issues, please report them.
